@@ -27,3 +27,7 @@ def position_taken?(array,index)
     false
   end
 end
+#===================================
+def input_to_index(input)
+  input = input.to_i - 1
+end
