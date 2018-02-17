@@ -1,4 +1,4 @@
-def valid_move? (array,index)
+def valid_move?(array,index)
   if index < 0 || index > 8
     false
   elsif array[index] == "X"
