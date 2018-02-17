@@ -6,16 +6,8 @@ def display_board (x)
   puts " #{x[6]} | #{x[7]} | #{x[8]} "
 end
 #===================================
-def valid_move? (array,index)
-  if index < 0 || index > 8
-    false
-  elsif array[index] == "X"
-    false
-  elsif array[index] == "O"
-    false
-  else
-    true
-  end
+def valid_move? (array, index)
+  index.between?(0,8) && !position_taken?(array, index)
 end
 #===================================
 def position_taken?(array,index)
